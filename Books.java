@@ -3,17 +3,17 @@ import java.util.Date;
 public class Book {
     private int id;
     private String title;
-    private String author;
+    private Author author;
     private Date registerDate;
     private boolean available;
     private Date attDate;
 
-    public Livro(int id, String title, String author, Date registerDate, boolean available, Date attDate) {
+    public Book(int id, String title, Author author) {
         this.id = id;
         this.title = title;
         this.author = author;
         this.registerDate = new Date();
-        this.availible = true;
+        this.available = true;
         this.attDate = new Date();
     }
 
@@ -25,7 +25,7 @@ public class Book {
         return title;
     }
 
-    public String getAuthor() {
+    public Author getAuthor() {
         return author;
     }
 
@@ -49,7 +49,7 @@ public class Book {
         this.title = title;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor(Author author) {
         this.author = author;
     }
 
@@ -59,10 +59,6 @@ public class Book {
 
     public void setAvailable(boolean available) {
         this.available = available;
-    }
-
-    public void setAttDate(Date AttDate) {
-        this.attDate = attDate;
     }
 
     @Override
