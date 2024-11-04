@@ -5,7 +5,7 @@ public class Author {
     private String name;
     private Date birthDate;
 
-    public Autor(int id, String name, Date birthDate) {
+    public Author(int id, String name, Date birthDate) {
         this.id = id;
         this.name = name;
         this.birthDate = birthDate;
